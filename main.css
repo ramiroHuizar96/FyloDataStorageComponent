@@ -32,7 +32,7 @@ main {
   padding: 2.2rem;
 }
 
-li {
+.button_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,11 +45,7 @@ li {
   padding-top: 1rem;
 }
 
-div ul:first-child {
-  margin-left: 0;
-}
-
-ul {
+.button {
   margin-left: 1rem;
 }
 
@@ -69,6 +65,10 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.first_button {
+  margin-left: 0;
 }
 
 .icon_wrapper {
