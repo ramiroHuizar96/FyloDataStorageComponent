@@ -14,6 +14,7 @@ body{
     block-size: border-box;
     background-image: url(./images/bg-mobile.png);
     background-repeat: no-repeat;
+    transition: ease all .5s;
 }
 
 main{
@@ -21,6 +22,7 @@ main{
     width: 23.4375rem;
     height: 100vh;
     overflow: hidden;
+    transition: ease all .5s;
 }
 
 .wrapper{
@@ -66,6 +68,7 @@ ul{
     margin-top: 8rem;
     height: 6.5rem;
     border-top-right-radius: 90px;
+    transition: ease all .5s;
 }
 .bar{
     background-color: $VeryDarkBlue;
@@ -97,6 +100,7 @@ ul{
     }
 }
 .loading_wrapper{
+    transition: ease all .5s;
     font-size: 0.875rem;
     margin-top: 1rem;
     text-align: center;
@@ -111,6 +115,7 @@ ul{
 }
 
 .left_message{
+    transition: ease all .5s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,11 +150,12 @@ ul{
         align-items: baseline;
     }
     body{
+        margin: 0;
         background-image: url(./images/bg-desktop.png);
         background-size: cover;
         width: 100%;
         height: 100vh;
-        background-position-x: center;
+        background-position: bottom 25% right 50%;
         overflow: hidden;
     }
     .icon_wrapper{
@@ -161,7 +167,15 @@ ul{
     }
 
     .left_message{
-        top: -3rem;   
+        top: -3rem;
+        right: inherit;
+        margin-left: 10rem;
     }
-    
+    .bar{
+        .progress{
+            .ball{
+                left: 97%;
+            }
+        }
+    }
 }
